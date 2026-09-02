@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: 'Rubik', 'Assistant', 'Heebo', system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+    background-color: #FAF7F2;
+    color: #43423E;
+  }
+}
+
+/* Accessibility Modes (Standard Israeli / WCAG 2.1 AA) */
+body.a11y-high-contrast {
+  filter: contrast(140%);
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+body.a11y-dark-contrast {
+  background-color: #0f172a !important;
+  color: #f8fafc !important;
+}
+
+body.a11y-dark-contrast * {
+  border-color: #334155 !important;
+}
+
+body.a11y-grayscale {
+  filter: grayscale(100%) !important;
+}
+
+body.a11y-invert {
+  filter: invert(100%) hue-rotate(180deg) !important;
+}
+
+body.a11y-readable-font * {
+  font-family: 'Assistant', Arial, sans-serif !important;
+  letter-spacing: 0.05em !important;
+  word-spacing: 0.1em !important;
+  line-height: 1.8 !important;
+}
+
+body.a11y-highlight-links a,
+body.a11y-highlight-links button {
+  text-decoration: underline !important;
+  text-decoration-thickness: 2px !important;
+  text-underline-offset: 4px !important;
+  outline: 2px solid #D98E73 !important;
+  outline-offset: 2px !important;
+}
+
+body.a11y-large-cursor,
+body.a11y-large-cursor * {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="%23000" stroke="%23fff" stroke-width="2"><path d="M4 4l7.07 17 2.51-7.39L21 11.07z"/></svg>'), auto !important;
+}
+
+body.a11y-stop-animations * {
+  animation: none !important;
+  transition: none !important;
+}
+
+/* Natural Tones Soft Shadows & Accents */
+.natural-card-shadow {
+  box-shadow: 0 10px 30px -10px rgba(93, 78, 66, 0.08);
+}
+
+.natural-glow-terracotta {
+  box-shadow: 0 10px 25px -5px rgba(217, 142, 115, 0.25);
+}
+
+.natural-glow-sage {
+  box-shadow: 0 10px 25px -5px rgba(122, 140, 122, 0.25);
+}
+
+/* Hide scrollbar for clean horizontal card scrolling on mobile */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+

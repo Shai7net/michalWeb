@@ -1,0 +1,6 @@
+{
+  "name": "מִיכָאֵלָה — תנועה, משחק, יוגה, קרקס ויצירה",
+  "description": "אתר פעילויות יוגה, קרקס, משחק, יצירה וימי הולדת לילדים, משפחות, מסגרות חינוכיות וארגונים. מותאם למובייל ולתקני נגישות ישראליים.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
